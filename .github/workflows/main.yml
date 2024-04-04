@@ -1,0 +1,24 @@
+name: Running on demand automation API
+
+on:
+  workflow_dispatch:
+    inputs:
+      logLevel:
+      tags:
+        description: 'Input tag scenario'
+        required: true
+        default: smoke-test
+        
+jobs:
+ run-automation:
+  runs-on: ubuntu-latest
+  steps:
+    - uses: actions/checkout@v4
+    - name: Setup Maven Action
+      uses: actions/setup-node@v4
+      with:
+        node-version: 20
+      run: npm install
+    - name: Running API
+      run:  npm test tests/specs/${{ inputs.tags }}
+    
