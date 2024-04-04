@@ -25,10 +25,13 @@ Run tests and Generate Report
 ```bash
 npm test  [folder tests/specs/.*ts]
 ```
-Feature File 
+Running on demand action 
 ```
-get-api
-post-api
+- Choose Actions 
+- Run Workflow
+- Input Tag Scenario
+1. get-api.spec.ts
+2. post-api.spec.ts
 
 ```
 ## Key Features:
