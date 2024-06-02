@@ -1,13 +1,13 @@
 export type GetParam = {
-  page: string;
+    page: string;
 };
 
 export type Login = {
-  email: string;
-  password: string;
+    email: string;
+    password: string;
 };
 
-export type Create = {
-  name: string;
-  job: string;
+export type CreateUpdate = {
+    name: string;
+    job: string;
 };

@@ -20,20 +20,30 @@ https://reqres.in/api
 
 ```
 
-Run tests and Generate Report
+Run All Test and Generate Report
 
 ```bash
-npm test  [folder tests/specs/.*ts]
+npm test
 ```
-Running on demand action 
+
+Run Specific Test and Generate Report
+
+```bash
+npm test tests/specs/.*ts
 ```
-- Choose Actions 
+
+Running on demand action
+
+```
+- Choose Actions
 - Run Workflow
 - Input Tag Scenario
 1. get-api.spec.ts
 2. post-api.spec.ts
-
+3. put-api.spec.ts
+4. delete-api.spec.ts
 ```
+
 ## Key Features:
 
     - Supertest library
