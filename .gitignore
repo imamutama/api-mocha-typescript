@@ -2,3 +2,4 @@ node_modules
 report
 temp
 package-lock.json
+.prettierrc
